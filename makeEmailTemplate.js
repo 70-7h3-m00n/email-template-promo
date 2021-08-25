@@ -15,6 +15,7 @@ fs.readFile('./out/index.html', 'utf8', (err, data) => {
       .substring(17)
       .replace(/(\n|\r|  )/g, '')
       .trim()
+      .replace(/(&#x27;)/g, '"')
 
   fs.writeFile('./template.html', content, err => {
     if (err) {
