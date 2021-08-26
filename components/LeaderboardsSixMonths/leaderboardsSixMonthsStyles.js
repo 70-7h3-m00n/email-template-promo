@@ -1,38 +1,51 @@
 const leaderboardsSixMonthsStyles = {
   container: {
-    // marginTop: '-57px'
+    marginTop: '-28px'
   },
   title: {
-    marginTop: '-345px',
-    marginLeft: '40px',
-    fontSize: '24px',
+    marginTop: 0,
+    marginBottom: '11px',
+    marginLeft: '-12px',
+    fontSize: '15px',
     fontWeight: 500,
-    lineHeight: '110%',
-    color: '#1A1A1A'
-  },
-  prize: {
-    marginTop: '-10px',
-    marginBottom: '17px',
-    marginLeft: '40px',
-    fontSize: '24px',
-    fontWeight: 500,
-    color: '#3290FF'
-  },
-  subtitle: {
-    marginTop: '-1px',
-    marginBottom: 0,
-    marginLeft: '40px',
-    fontSize: '14px',
-    fontWeight: 500,
-    color: '#000'
+    lineHeight: '140%',
+    color: '#241C24'
   },
   p: {
-    marginTop: 0,
-    marginBottom: '10px',
-    marginLeft: '40px',
-    fontSize: '14px',
+    marginLeft: '-12px',
+    fontSize: '11px',
+    fontWeight: 300,
+    lineHeight: '140%',
+    color: '#241C24'
+  },
+  leadersTitle: {
+    marginLeft: '-12px',
+    fontSize: '11px',
     fontWeight: 500,
-    color: '#3290FF'
+    lineHeight: '140%',
+    color: '#241C24'
+  },
+  name: {
+    marginLeft: '-19px',
+    display: 'inline-block',
+    width: '25%',
+    fontSize: '12px',
+    fontWeight: 300,
+    lineHeight: '140%'
+  },
+  progressBar: {
+    display: 'inline-block',
+    width: '72%',
+    marginRight: '6px',
+    backgroundColor: '#E3E3E3'
+  },
+  rubSymbol: {
+    display: 'inline-block',
+    width: '24px',
+    paddingLeft: '8px',
+    borderRadius: '50%',
+    backgroundColor: '#3290FF',
+    color: '#fff'
   }
 }
 

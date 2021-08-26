@@ -18,7 +18,6 @@ const Home = ({ data }) => {
   const dataThisMonth = data
     .filter(item => isCurrentMonth(item.month) && item)
     .sort((a, b) => b.result - a.result)
-  console.log(dataThisMonth)
   const lastSixMonths = getLastSixMonths()
   const dataLastSixMonths = data.filter(item => {
     let include = false
@@ -27,6 +26,8 @@ const Home = ({ data }) => {
     })
     if (include) return item
   })
+
+  console.log(dataLastSixMonths)
 
   return (
     <PostonentsProvider theme={{ typo: { fontFamily: 'Stem, sans-serif' } }}>
