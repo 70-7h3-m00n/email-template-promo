@@ -6,7 +6,7 @@ import {
 const HeaderLogo = () => {
   return (
     <Header
-      logo='/assets/imgs/logo.png'
+      logo='https://res.cloudinary.com/mipinstitute/image/upload/v1629971752/temp%20ipo%20email/logo_yclf1h.png'
       title={
         <>
           Московский институт <br /> профессионального образования

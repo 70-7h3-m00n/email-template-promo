@@ -1,21 +1,33 @@
 const footerContactsStyles = {
   container: {
-    fontSize: '11px',
-    fontWeight: 300,
-    lineHeight: '13px',
+    lineHeight: '24px',
     textAlign: 'center',
     backgroundColor: '#F2F2F2',
     color: '#000'
   },
-  link: {
-    marginRight: '11px',
-    fontSize: '11px',
-    lineHeight: '13px',
-    color: '#000'
+  titleFirst: {
+    marginTop: '18px',
+    marginBottom: 0,
+    padding: 0,
+    fontSize: '14px',
+    fontWeight: 500
   },
-  separator: {
-    marginRight: '11px',
-    color: '#000'
+
+  title: {
+    marginTop: '31px',
+    marginBottom: 0,
+    padding: 0,
+    fontSize: '14px',
+    fontWeight: 500
+  },
+  p: {
+    margin: 0,
+    padding: 0,
+    fontSize: '16px',
+    fontWeight: 300
+  },
+  dimmer: {
+    color: '#9D9D9D'
   }
 }
 

@@ -1,3 +1,17 @@
+import getLastSixMonths from './getLastSixMonths'
+import getBestManagerResult from './getBestManagerResult'
 import fetchNotionData from './fetchNotionData'
+import getCurrentMonthNum from './getCurrentMonthNum'
+import getMonthFromNum from './getMonthFromNum'
+import isCurrentMonth from './isCurrentMonth'
+import toNumberWithSpaces from './toNumberWithSpaces'
 
-export { fetchNotionData }
+export {
+  getLastSixMonths,
+  getBestManagerResult,
+  fetchNotionData,
+  getCurrentMonthNum,
+  getMonthFromNum,
+  isCurrentMonth,
+  toNumberWithSpaces
+}

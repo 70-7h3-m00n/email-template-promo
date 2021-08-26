@@ -3,13 +3,8 @@ import {
   Container,
   Row,
   Column,
-  Header,
-  FullWidth,
-  Footer,
-  Text,
   Link,
-  Image,
-  PostonentsProvider
+  Image
 } from 'postonents'
 
 const Banner = () => {
@@ -18,7 +13,7 @@ const Banner = () => {
       <Row>
         <Column>
           <Image
-            src='/assets/imgs/banner.jpg'
+            src='https://res.cloudinary.com/mipinstitute/image/upload/v1629971752/temp%20ipo%20email/banner_tjogdh.jpg'
             width={600}
             height={300}
             alt='Банер'
@@ -34,9 +29,6 @@ const Banner = () => {
           <Link href={'https://ipo.msk.ru/'} style={stls.btn}>
             Перейти на сайт
           </Link>
-        </Column>
-        <Column style={{ marginBottom: 24, textAlign: 'center' }}>
-          <Link href={`https://example.com/`}>{`https://example.com/`}</Link>
         </Column>
       </Row>
     </Container>

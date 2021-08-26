@@ -1,56 +1,43 @@
-import { homePageStyles as stls } from '../jsStyles/homePageStyles'
-import { fetchNotionData } from '../helpers'
-import {
-  Container,
-  Row,
-  Column,
-  Header,
-  FullWidth,
-  Text,
-  Link,
-  Image,
-  PostonentsProvider
-} from 'postonents'
+import { fetchNotionData, getLastSixMonths, isCurrentMonth } from '../helpers'
+import { PostonentsProvider } from 'postonents'
 import {
   HeaderLogo,
   EmailWrapper,
   HeaderLinks,
+  LeaderboardsMonth,
+  LeaderboardsSixMonths,
   Banner,
+  Winner,
+  Prize,
   FooterContacts,
   FooterLinks,
   Footer
 } from '../components'
 
-const Home = ({ managersData }) => {
-  console.log(managersData)
+const Home = ({ data }) => {
+  const dataThisMonth = data
+    .filter(item => isCurrentMonth(item.month) && item)
+    .sort((a, b) => b.result - a.result)
+  console.log(dataThisMonth)
+  const lastSixMonths = getLastSixMonths()
+  const dataLastSixMonths = data.filter(item => {
+    let include = false
+    lastSixMonths.forEach(month => {
+      month.toLowerCase() === item.month.toLowerCase() && (include = true)
+    })
+    if (include) return item
+  })
+
   return (
     <PostonentsProvider theme={{ typo: { fontFamily: 'Stem, sans-serif' } }}>
       <EmailWrapper>
         <HeaderLogo />
         <HeaderLinks />
         <Banner />
-        <FullWidth style={{ marginBottom: 24 }}>
-          <Container alignment='center'>
-            <Row>
-              <Column>
-                <Text>Any other questions? We are happy to help!</Text>
-              </Column>
-              <Column small={6}>
-                <Link
-                  href='https://support.example.com'
-                  fullWidth
-                  type='hollow'>
-                  Help Center
-                </Link>
-              </Column>
-              <Column small={6}>
-                <Link href='mailto:info@example.com' fullWidth type='hollow'>
-                  Email
-                </Link>
-              </Column>
-            </Row>
-          </Container>
-        </FullWidth>
+        <Winner data={dataThisMonth} />
+        <LeaderboardsMonth data={dataThisMonth} />
+        <Prize data={dataLastSixMonths} />
+        <LeaderboardsSixMonths data={dataLastSixMonths} />
         <FooterContacts />
         <FooterLinks />
         <Footer />
@@ -60,11 +47,11 @@ const Home = ({ managersData }) => {
 }
 
 export async function getStaticProps(context) {
-  const managersData = await fetchNotionData()
+  const data = await fetchNotionData()
 
   return {
     props: {
-      managersData
+      data
     }
   }
 }

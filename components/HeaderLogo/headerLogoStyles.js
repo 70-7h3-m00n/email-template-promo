@@ -4,6 +4,7 @@ const headerLogoStyles = {
     fontWeight: 300,
     fontSize: '14px',
     lineHeight: '16px',
+    textAlign: 'center',
     backgroundColor: '#002C9F',
     color: '#fff'
   }

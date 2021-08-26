@@ -3,9 +3,7 @@ import {
   Container,
   Row,
   Column,
-  Footer as FooterPostonents,
-  Link,
-  Text
+  Footer as FooterPostonents
 } from 'postonents'
 
 const Footer = () => {
