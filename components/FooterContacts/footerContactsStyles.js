@@ -1,6 +1,5 @@
-const headerLinksStyles = {
+const footerContactsStyles = {
   container: {
-    marginBottom: '6px',
     fontSize: '11px',
     fontWeight: 300,
     lineHeight: '13px',
@@ -16,8 +15,8 @@ const headerLinksStyles = {
   },
   separator: {
     marginRight: '11px',
-    color: '#C7C7C7'
+    color: '#000'
   }
 }
 
-export { headerLinksStyles }
+export { footerContactsStyles }

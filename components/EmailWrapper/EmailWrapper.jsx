@@ -30,6 +30,14 @@ const EmailWrapper = ({ children }) => {
       font-style: normal;
       font-weight: 500;
     }
+    @font-face{
+      font-display: swap;
+      font-family: Stem;
+      src: local(Stem), url(/assets/fonts/stem/Stem-Bold.eot);
+      src: local(Stem), url(/assets/fonts/stem/Stem-Bold.eot?iefix) format('embedded-opentype'), url(/assets/fonts/stem/Stem-Bold.ttf) format('truetype'), url(/assets/fonts/stem/Stem-Bold.woff) format('woff'), url(/assets/fonts/stem/Stem-Bold.woff2) format('woff2');
+      font-style: normal;
+      font-weight: 700;
+    }
     body { 
       background-color: white; 
     }

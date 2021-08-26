@@ -6,53 +6,29 @@ import {
   Column,
   Header,
   FullWidth,
-  Footer,
   Text,
   Link,
   Image,
   PostonentsProvider
 } from 'postonents'
-import { HeaderLogo, EmailWrapper, HeaderLinks } from '../components'
+import {
+  HeaderLogo,
+  EmailWrapper,
+  HeaderLinks,
+  Banner,
+  FooterContacts,
+  FooterLinks,
+  Footer
+} from '../components'
 
-const Home = ({ data = { verifyToken: '' }, managersData }) => {
-  const { verifyToken } = data
+const Home = ({ managersData }) => {
   console.log(managersData)
   return (
     <PostonentsProvider theme={{ typo: { fontFamily: 'Stem, sans-serif' } }}>
       <EmailWrapper>
         <HeaderLogo />
         <HeaderLinks />
-        <Container alignment='center'>
-          <Row>
-            <Column>
-              <h1>test</h1>
-              <Image
-                src='/assets/imgs/banner.jpg'
-                width={600}
-                height={300}
-                alt='Банер'
-              />
-            </Column>
-            <Column style={{ marginBottom: 24 }}>
-              <Text fontSize={20} fontWeight={300}>
-                {managersData[0].name}
-                You just registered with the following email. To verify this
-                email please click on the link or the text link below.
-              </Text>
-            </Column>
-            <Column style={{ marginBottom: 24, textAlign: 'center' }}>
-              <Link
-                href={`https://example.com/verify/${verifyToken}`}
-                type='primary'>
-                Verify your email
-              </Link>
-            </Column>
-            <Column style={{ marginBottom: 24, textAlign: 'center' }}>
-              <Link
-                href={`https://example.com/verify/${verifyToken}`}>{`https://example.com/verify/${verifyToken}`}</Link>
-            </Column>
-          </Row>
-        </Container>
+        <Banner />
         <FullWidth style={{ marginBottom: 24 }}>
           <Container alignment='center'>
             <Row>
@@ -75,23 +51,9 @@ const Home = ({ data = { verifyToken: '' }, managersData }) => {
             </Row>
           </Container>
         </FullWidth>
-        <Footer style={{ color: 'white' }}>
-          <Container alignment='center'>
-            <Row>
-              <Column
-                style={{
-                  textAlign: 'center',
-                  fontSize: 12,
-                  lineHeight: '16px',
-                  fontWeight: 300
-                }}>
-                Copyright © 2018 NBC, all rights reserved
-                <br />
-                registered in the commercial register Narnia
-              </Column>
-            </Row>
-          </Container>
-        </Footer>
+        <FooterContacts />
+        <FooterLinks />
+        <Footer />
       </EmailWrapper>
     </PostonentsProvider>
   )
@@ -100,11 +62,8 @@ const Home = ({ data = { verifyToken: '' }, managersData }) => {
 export async function getStaticProps(context) {
   const managersData = await fetchNotionData()
 
-  const data = { verifyToken: '' }
-
   return {
     props: {
-      data,
       managersData
     }
   }
