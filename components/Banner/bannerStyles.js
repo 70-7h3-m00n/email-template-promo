@@ -1,9 +1,9 @@
 const bannerStyles = {
   container: {
-    marginTop: '-20px'
+    marginTop: '-10px'
   },
   title: {
-    // marginTop: '-270px',
+    marginTop: '40px',
     marginLeft: '40px',
     fontSize: '28px',
     fontWeight: 700,
@@ -13,6 +13,7 @@ const bannerStyles = {
   column: {
     backgroundImage:
       "url('https://res.cloudinary.com/mipinstitute/image/upload/v1629971752/temp%20ipo%20email/banner_tjogdh.jpg')",
+    minWidth: '600px',
     width: '600px',
     height: '300px'
   },

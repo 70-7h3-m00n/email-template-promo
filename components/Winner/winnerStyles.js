@@ -1,14 +1,21 @@
 const winnerStyles = {
   container: {
-    marginTop: '-57px'
+    marginTop: '-17px'
   },
   title: {
-    marginTop: '-312px',
+    marginTop: '40px',
     marginLeft: '40px',
     fontSize: '24px',
     fontWeight: 500,
     lineHeight: '110%',
     color: '#1A1A1A'
+  },
+  column: {
+    backgroundImage:
+      "url('https://res.cloudinary.com/mipinstitute/image/upload/v1629973173/temp%20ipo%20email/winner_c3uqcf.jpg')",
+    minWidth: '600px',
+    width: '600px',
+    height: '332px'
   },
   prize: {
     marginTop: '-10px',

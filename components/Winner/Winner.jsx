@@ -12,15 +12,7 @@ const Winner = ({ data }) => {
   return (
     <Container alignment='center' style={stls.container}>
       <Row>
-        <Column>
-          <Image
-            src='https://res.cloudinary.com/mipinstitute/image/upload/v1629973173/temp%20ipo%20email/winner_c3uqcf.jpg'
-            width={600}
-            height={332}
-            alt='Лидер'
-          />
-        </Column>
-        <Column>
+        <Column style={stls.column}>
           <h2 style={stls.title}>Премия за объем продаж</h2>
           <p style={stls.prize}>30 000 тыс. руб.</p>
           <p style={stls.subtitle}>Лучший в гонке</p>

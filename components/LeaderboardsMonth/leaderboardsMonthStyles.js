@@ -1,6 +1,7 @@
 const leaderboardsMonthStyles = {
   container: {
-    marginTop: '-28px'
+    // marginTop: '-28px'
+    marginBottom: '10px'
   },
   title: {
     marginTop: 0,
@@ -19,23 +20,29 @@ const leaderboardsMonthStyles = {
     color: '#241C24'
   },
   leadersTitle: {
+    marginTop: '-12px',
     marginLeft: '-12px',
     fontSize: '11px',
     fontWeight: 500,
     lineHeight: '140%',
     color: '#241C24'
   },
+  fullWidth: {
+    width: '100%',
+    minWidth: '100%'
+  },
   name: {
-    marginLeft: '-19px',
+    marginLeft: '-10px',
+    marginBottom: '17px',
     display: 'inline-block',
-    width: '25%',
+    width: '24%',
     fontSize: '12px',
     fontWeight: 300,
     lineHeight: '140%'
   },
   progressBar: {
     display: 'inline-block',
-    width: '72%',
+    width: '71%',
     marginRight: '6px',
     backgroundColor: '#E3E3E3'
   },

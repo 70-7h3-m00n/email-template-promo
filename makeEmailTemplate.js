@@ -18,6 +18,7 @@ fs.readFile('./out/index.html', 'utf8', (err, data) => {
       .replace(/(&#x27;)/g, '"')
       .replace(/(url\(\"https)/g, "url('https")
       .replace(/(\.jpg\"\))/g, ".jpg')")
+      .replace(/(\.png\"\))/g, ".png')")
 
   fs.writeFile('./template.html', content, err => {
     if (err) {
