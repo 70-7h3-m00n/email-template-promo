@@ -43,6 +43,14 @@ const prizeStyles = {
     fontSize: '14px',
     fontWeight: 500,
     color: '#3290FF'
+  },
+  leader: {
+    marginTop: 0,
+    marginBottom: '10px',
+    marginLeft: '40px',
+    fontSize: '14px',
+    fontWeight: 600,
+    color: '#3290FF'
   }
 }
 

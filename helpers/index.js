@@ -4,6 +4,7 @@ import fetchNotionData from './fetchNotionData'
 import getCurrentMonthNum from './getCurrentMonthNum'
 import getMonthFromNum from './getMonthFromNum'
 import isCurrentMonth from './isCurrentMonth'
+import sumMonths from './sumMonths'
 import toNumberWithSpaces from './toNumberWithSpaces'
 
 export {
@@ -13,5 +14,6 @@ export {
   getCurrentMonthNum,
   getMonthFromNum,
   isCurrentMonth,
+  sumMonths,
   toNumberWithSpaces
 }

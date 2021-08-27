@@ -43,6 +43,7 @@ const leaderboardsMonthStyles = {
   progressBar: {
     display: 'inline-block',
     width: '71%',
+    maxWidth: '408px',
     marginRight: '6px',
     backgroundColor: '#E3E3E3'
   },

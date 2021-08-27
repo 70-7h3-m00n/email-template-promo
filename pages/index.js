@@ -1,4 +1,9 @@
-import { fetchNotionData, getLastSixMonths, isCurrentMonth } from '../helpers'
+import {
+  fetchNotionData,
+  getLastSixMonths,
+  isCurrentMonth,
+  sumMonths
+} from '../helpers'
 import { PostonentsProvider } from 'postonents'
 import {
   HeaderLogo,
@@ -26,8 +31,36 @@ const Home = ({ data }) => {
     })
     if (include) return item
   })
+  const dataFromJuly = data.filter(item => {
+    const months = [
+      'Июль',
+      'Август',
+      'Сентябрь',
+      'Октябрь',
+      'Ноябрь',
+      'Декабрь'
+    ]
 
-  console.log(dataLastSixMonths)
+    let include = false
+    months.forEach(month => {
+      month.toLowerCase() === item.month.toLowerCase() && (include = true)
+    })
+    if (include) return item
+  })
+
+  const twoMonthsInFromAugust = data.filter(item => {
+    const months = ['Август', 'Сентябрь']
+
+    let include = false
+    months.forEach(month => {
+      month.toLowerCase() === item.month.toLowerCase() && (include = true)
+    })
+    if (include) return item
+  })
+
+  console.log(data)
+  const twoMonthsInFromAugustSumUp = sumMonths(twoMonthsInFromAugust)
+  const dataFromJulySumUp = sumMonths(dataFromJuly)
 
   return (
     <PostonentsProvider theme={{ typo: { fontFamily: 'Stem, sans-serif' } }}>
@@ -35,10 +68,10 @@ const Home = ({ data }) => {
         <HeaderLogo />
         <HeaderLinks />
         <Banner />
-        <Winner data={dataThisMonth} />
-        <LeaderboardsMonth data={dataThisMonth} />
-        <Prize data={dataLastSixMonths} />
-        <LeaderboardsSixMonths data={dataLastSixMonths} />
+        <Winner data={twoMonthsInFromAugustSumUp} />
+        <LeaderboardsMonth data={twoMonthsInFromAugustSumUp} />
+        <Prize data={dataFromJulySumUp} />
+        <LeaderboardsSixMonths data={dataFromJulySumUp} />
         <FooterContacts />
         <FooterLinks />
         <Footer />
