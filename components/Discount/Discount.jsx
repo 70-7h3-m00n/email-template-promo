@@ -8,7 +8,7 @@ const Discount = () => {
         <Column>
           <p style={stls.title}>Ваш промокод на скидку 30%:</p>
           <p style={stls.p}>
-            LETO2021
+            OSEN2021
           </p>
         </Column>
       </Row>
