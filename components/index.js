@@ -6,6 +6,7 @@ import HeaderLinks from './HeaderLinks/HeaderLinks'
 import Banner from './Banner/Banner'
 import Winner from './Winner/Winner'
 import Prize from './Prize/Prize'
+import PromoHello from './PromoHello/PromoHello'
 import FooterContacts from './FooterContacts/FooterContacts'
 import FooterLinks from './FooterLinks/FooterLinks'
 import Footer from './Footer/Footer'
@@ -19,6 +20,7 @@ export {
   Banner,
   Winner,
   Prize,
+  PromoHello,
   FooterContacts,
   FooterLinks,
   Footer

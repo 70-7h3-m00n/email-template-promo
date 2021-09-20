@@ -7,6 +7,7 @@ import {
 import { PostonentsProvider } from 'postonents'
 import {
   HeaderLogo,
+  PromoHello,
   EmailWrapper,
   HeaderLinks,
   LeaderboardsMonth,
@@ -68,6 +69,7 @@ const Home = ({ data }) => {
         <HeaderLogo />
         <HeaderLinks />
         <Banner />
+        <PromoHello />
         <Winner data={twoMonthsInFromAugustSumUp} />
         <LeaderboardsMonth data={twoMonthsInFromAugustSumUp} />
         <Prize data={dataFromJulySumUp} />
@@ -81,7 +83,8 @@ const Home = ({ data }) => {
 }
 
 export async function getStaticProps(context) {
-  const data = await fetchNotionData()
+  // const data = await fetchNotionData()
+  const data = []
 
   return {
     props: {
