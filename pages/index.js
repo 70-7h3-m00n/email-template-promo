@@ -11,12 +11,9 @@ import {
   Discount,
   EmailWrapper,
   HeaderLinks,
-  LeaderboardsMonth,
-  LeaderboardsSixMonths,
   Banner,
-  Winner,
   Cta,
-  Prize,
+  Article,
   FooterContacts,
   FooterLinks,
   Footer
@@ -74,10 +71,7 @@ const Home = ({ data }) => {
         <PromoHello />
         <Discount />
         <Cta />
-        <Winner data={twoMonthsInFromAugustSumUp} />
-        <LeaderboardsMonth data={twoMonthsInFromAugustSumUp} />
-        <Prize data={dataFromJulySumUp} />
-        <LeaderboardsSixMonths data={dataFromJulySumUp} />
+        <Article />
         <FooterContacts />
         <FooterLinks />
         <Footer />

@@ -1,3 +1,4 @@
+import Article from './Article/Article'
 import EmailWrapper from './EmailWrapper/EmailWrapper'
 import HeaderLogo from './HeaderLogo/HeaderLogo'
 import LeaderboardsMonth from './LeaderboardsMonth/LeaderboardsMonth'
@@ -14,6 +15,7 @@ import FooterLinks from './FooterLinks/FooterLinks'
 import Footer from './Footer/Footer'
 
 export {
+  Article,
   EmailWrapper,
   HeaderLogo,
   LeaderboardsMonth,
