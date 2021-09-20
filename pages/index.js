@@ -8,12 +8,14 @@ import { PostonentsProvider } from 'postonents'
 import {
   HeaderLogo,
   PromoHello,
+  Discount,
   EmailWrapper,
   HeaderLinks,
   LeaderboardsMonth,
   LeaderboardsSixMonths,
   Banner,
   Winner,
+  Cta,
   Prize,
   FooterContacts,
   FooterLinks,
@@ -70,6 +72,8 @@ const Home = ({ data }) => {
         <HeaderLinks />
         <Banner />
         <PromoHello />
+        <Discount />
+        <Cta />
         <Winner data={twoMonthsInFromAugustSumUp} />
         <LeaderboardsMonth data={twoMonthsInFromAugustSumUp} />
         <Prize data={dataFromJulySumUp} />

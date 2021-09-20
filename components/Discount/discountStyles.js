@@ -1,24 +1,29 @@
-const PromoHelloStyles = {
+const DiscountStyles = {
   container: {
     // marginTop: '-28px'
-    marginBottom: '10px'
+    marginBottom: '10px',
+    backgroundColor: '#3290FF'
   },
   title: {
     marginBottom: '11px',
     marginLeft: '-12px',
     fontSize: '15px',
     fontWeight: 500,
-    lineHeight: '140%',
+    lineHeight: '20px',
     textAlign: 'center',
-    color: '#241C24'
+    color: '#fff'
   },
   p: {
-    marginLeft: '-12px',
-    fontSize: '11px',
-    fontWeight: 300,
-    lineHeight: '140%',
+    width: '100%',
+    maxWidth: '162px',
+    margin: '20px auto',
+    padding: '10px',
+    border: '2px dashed #fff',
+    fontSize: '15px',
+    fontWeight: 700,
+    lineHeight: '19px',
     textAlign: 'center',
-    color: '#241C24'
+    color: '#fff'
   },
   leadersTitle: {
     marginTop: '-12px',
@@ -26,7 +31,7 @@ const PromoHelloStyles = {
     fontSize: '11px',
     fontWeight: 500,
     lineHeight: '140%',
-    color: '#241C24'
+    color: '#fff'
   },
   fullWidth: {
     width: '100%',
@@ -58,4 +63,4 @@ const PromoHelloStyles = {
   }
 }
 
-export { PromoHelloStyles }
+export { DiscountStyles }
