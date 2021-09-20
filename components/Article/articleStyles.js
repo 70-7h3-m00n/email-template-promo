@@ -12,10 +12,30 @@ const articleStyles = {
     lineHeight: '110%',
     color: '#fff'
   },
-  column: {
+  psychology: {
     backgroundColor: '#3290FF',
     backgroundImage:
-      "url('https://res.cloudinary.com/npoipe/image/upload/v1632137484/article_vnfujf.jpg')",
+      "url('https://res.cloudinary.com/npoipe/image/upload/v1632141921/email%20template%20promo/article-psychology_nwsdd2.jpg')",
+    backgroundRepeat: 'no-repeat',
+    minWidth: '600px',
+    width: '600px',
+    minHeight: '604px',
+    height: '100%'
+  },
+  management: {
+    backgroundColor: '#3290FF',
+    backgroundImage:
+      "url('https://res.cloudinary.com/npoipe/image/upload/v1632141925/email%20template%20promo/article-management_zhlddu.jpg')",
+    backgroundRepeat: 'no-repeat',
+    minWidth: '600px',
+    width: '600px',
+    minHeight: '604px',
+    height: '100%'
+  },
+  tech: {
+    backgroundColor: '#3290FF',
+    backgroundImage:
+      "url('https://res.cloudinary.com/npoipe/image/upload/v1632141917/email%20template%20promo/article-tech_apdbcs.jpg')",
     backgroundRepeat: 'no-repeat',
     minWidth: '600px',
     width: '600px',

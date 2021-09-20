@@ -10,12 +10,29 @@ const ctaStyles = {
     lineHeight: '110%',
     color: '#1A1A1A'
   },
-  column: {
+  psychology: {
     backgroundImage:
-      "url('https://res.cloudinary.com/npoipe/image/upload/v1632136677/cta_mfdmlq.jpg')",
+      "url('https://res.cloudinary.com/npoipe/image/upload/v1632141645/email%20template%20promo/cta-psychology_d8lfo2.jpg')",
     minWidth: '600px',
     width: '600px',
-    height: '332px'
+    minHeight: '300px',
+    height: '300px'
+  },
+  management: {
+    backgroundImage:
+      "url('https://res.cloudinary.com/npoipe/image/upload/v1632141708/email%20template%20promo/cta-management_ve28v2.jpg')",
+    minWidth: '600px',
+    width: '600px',
+    minHeight: '300px',
+    height: '300px'
+  },
+  tech: {
+    backgroundImage:
+      "url('https://res.cloudinary.com/npoipe/image/upload/v1632141711/email%20template%20promo/cta-tech_j2jc99.jpg')",
+    minWidth: '600px',
+    width: '600px',
+    minHeight: '300px',
+    height: '300px'
   },
   prize: {
     marginTop: '-10px',
