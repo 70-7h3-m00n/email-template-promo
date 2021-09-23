@@ -25,12 +25,12 @@ const Cta = ({ type }) => {
           <Link
             href={
               type === 'psychology'
-                ? 'https://ipo.msk.ru/professionalnaja-perepodgotovka/psihologija/'
+                ? 'https://ipo.msk.ru/professionalnaja-perepodgotovka/psihologija/?utm_source=post-psyhology&utm_medium=cpm&utm_content=post-psyhology'
                 : type === 'management'
-                ? 'https://ipo.msk.ru/professionalnaja-perepodgotovka/menedzhment/'
+                ? 'https://ipo.msk.ru/professionalnaja-perepodgotovka/menedzhment/?utm_source=post-menegment&utm_medium=cpm&utm_content=post-menegment'
                 : type === 'tech'
-                ? 'https://ipo.msk.ru/professionalnaja-perepodgotovka/'
-                : 'https://ipo.msk.ru'
+                ? 'https://ipo.msk.ru/professionalnaja-perepodgotovka/?utm_source=post-tech&utm_medium=cpm&utm_content=post-tech'
+                : 'https://ipo.msk.ru?utm_source=post-tech&utm_medium=cpm&utm_content=post-tech'
             }
             style={stls.btn}>
             Выбрать программу

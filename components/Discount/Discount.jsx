@@ -5,10 +5,10 @@ const Discount = () => {
   return (
     <Container alignment='center' style={stls.container}>
       <Row>
-        <Column>
+        <Column className={stls.column}>
           <p style={stls.title}>Ваш промокод на скидку 30%:</p>
-          <p style={stls.p}>
-            OSEN2021
+          <p style={stls.p} align='center'>
+            SEP21
           </p>
         </Column>
       </Row>
