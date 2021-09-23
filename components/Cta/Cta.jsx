@@ -20,8 +20,8 @@ const Cta = ({ type }) => {
               ''
             )}
           </h2>
-          <p style={stls.subtitle}>20 сентября - 06 октября</p>
-          <p style={stls.info}>Акция действует до конц августа</p>
+          <p style={stls.subtitle}>5 октября - 20 октября</p>
+          <p style={stls.info}>Акция действует до конца сентября</p>
           <Link
             href={
               type === 'psychology'
@@ -29,8 +29,8 @@ const Cta = ({ type }) => {
                 : type === 'management'
                 ? 'https://ipo.msk.ru/professionalnaja-perepodgotovka/menedzhment/?utm_source=post-menegment&utm_medium=cpm&utm_content=post-menegment'
                 : type === 'tech'
-                ? 'https://ipo.msk.ru/professionalnaja-perepodgotovka/?utm_source=post-tech&utm_medium=cpm&utm_content=post-tech'
-                : 'https://ipo.msk.ru?utm_source=post-tech&utm_medium=cpm&utm_content=post-tech'
+                ? 'https://ipo.msk.ru/professionalnaja-perepodgotovka/?utm_source=post-tehnoch&utm_medium=cpm&utm_content=post-tehnoch'
+                : 'https://ipo.msk.ru?utm_source=post-tehnoch&utm_medium=cpm&utm_content=post-tehnoch'
             }
             style={stls.btn}>
             Выбрать программу

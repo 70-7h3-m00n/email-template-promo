@@ -34,14 +34,7 @@ const Article = ({ type }) => {
               </>
             ) : type === 'tech' ? (
               <>
-                Правильное, рациональное или здоровое питание каждого человека
-                подразумевает поступление с пищей полезных веществ в оптимальном
-                количестве, соотношении. Что дает сбалансированное питание? Его
-                преимущества бесценны: профилактика многих заболеваний, в том
-                числе сахарного диабета, ожирения, а также повышение иммунитета,
-                укрепление всех систем нашего организма, снижение стресса. Кроме
-                того, бонусами идут повышение настроения и уровня энергичности,
-                отсутствие лишнего веса, улучшение обмена веществ, внешнего вида
+                Правильное, рациональное или здоровое питание каждого человека подразумевает поступление с пищей полезных веществ в оптимальном количестве, соотношении. Что дает сбалансированное питание? Его преимущества бесценны: профилактика многих заболеваний, в том числе сахарного диабета, ожирения, а также повышение иммунитета, укрепление всех систем нашего организма, снижение стресса. Кроме того, бонусами идут повышение настроения и уровня энергичности, отсутствие лишнего веса, улучшение обмена веществ, внешнего вида
               </>
             ) : (
               ''
@@ -54,8 +47,8 @@ const Article = ({ type }) => {
                 : type === 'management'
                 ? 'https://ipo.msk.ru/novosti/pr-na-milliard-chemu-uchit-biznes-istorija-apple/?utm_source=post-menegment&utm_medium=cpm&utm_content=post-menegment'
                 : type === 'tech'
-                ? 'https://ipo.msk.ru?utm_source=post-tech&utm_medium=cpm&utm_content=post-tech'
-                : 'https://ipo.msk.ru?utm_source=post-tech&utm_medium=cpm&utm_content=post-tech'
+                ? 'https://ipo.msk.ru/novosti/organizatsija-zdorovogo-pitanija/?utm_source=post-tehnoch&utm_medium=cpm&utm_content=post-tehnoch'
+                : 'https://ipo.msk.ru/novosti/organizatsija-zdorovogo-pitanija/?utm_source=post-tehnoch&utm_medium=cpm&utm_content=post-tehnoch'
             }
             style={stls.btn}>
             Перейти к статье
