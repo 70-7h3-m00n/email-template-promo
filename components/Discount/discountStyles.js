@@ -37,10 +37,6 @@ const DiscountStyles = {
     lineHeight: '140%',
     color: '#fff'
   },
-  fullWidth: {
-    width: '100%',
-    minWidth: '100%'
-  },
   name: {
     marginLeft: '-10px',
     marginBottom: '17px',

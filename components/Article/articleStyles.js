@@ -92,7 +92,6 @@ const articleStyles = {
     color: '#fff'
   },
   btn: {
-    display: 'block',
     margin: '7px auto',
     width: '100%',
     maxWidth: '200px',

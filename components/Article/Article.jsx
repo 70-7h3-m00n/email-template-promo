@@ -64,6 +64,7 @@ const Article = ({ type }) => {
                 ''
               )}
             </p>
+            <div style={stls.btn}>
             <Link
               href={
                 type === 'psychology'
@@ -73,10 +74,11 @@ const Article = ({ type }) => {
                   : type === 'tech'
                   ? 'https://ipo.msk.ru/novosti/organizatsija-zdorovogo-pitanija/?utm_source=post-tehnoch&utm_medium=cpm&utm_content=post-tehnoch'
                   : 'https://ipo.msk.ru/novosti/organizatsija-zdorovogo-pitanija/?utm_source=post-tehnoch&utm_medium=cpm&utm_content=post-tehnoch'
-              }
-              style={stls.btn}>
+              }>
               Перейти к статье
             </Link>
+            </div>
+            
           </div>
         </Column>
       </Row>
