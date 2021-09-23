@@ -11,7 +11,7 @@ const DiscountStyles = {
   title: {
     marginBottom: '11px',
     marginLeft: '-12px',
-    fontSize: '15px',
+    fontSize: '18px',
     fontWeight: 500,
     lineHeight: '20px',
     textAlign: 'center',

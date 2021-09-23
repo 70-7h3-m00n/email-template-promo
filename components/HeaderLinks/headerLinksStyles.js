@@ -1,7 +1,7 @@
 const headerLinksStyles = {
   container: {
     marginBottom: '6px',
-    fontSize: '11px',
+    fontSize: '13px',
     fontWeight: 300,
     lineHeight: '13px',
     textAlign: 'center',
@@ -10,7 +10,7 @@ const headerLinksStyles = {
   },
   link: {
     marginRight: '11px',
-    fontSize: '11px',
+    fontSize: '13px',
     lineHeight: '13px',
     color: '#000'
   },

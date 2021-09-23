@@ -72,7 +72,7 @@ const articleStyles = {
     marginBottom: '30px',
     textAlign: 'center',
     marginLeft: '20px',
-    fontSize: '11px',
+    fontSize: '14px',
     fontWeight: 300,
     lineHeight: '21px',
     color: '#fff'

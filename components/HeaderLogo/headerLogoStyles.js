@@ -2,7 +2,7 @@ const headerLogoStyles = {
   container: {
     padding: '8px',
     fontWeight: 300,
-    fontSize: '14px',
+    fontSize: '16px',
     lineHeight: '16px',
     textAlign: 'center',
     backgroundColor: '#002C9F',

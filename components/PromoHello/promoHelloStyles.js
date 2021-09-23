@@ -6,7 +6,7 @@ const PromoHelloStyles = {
   title: {
     marginBottom: '11px',
     marginLeft: '-12px',
-    fontSize: '15px',
+    fontSize: '18px',
     fontWeight: 500,
     lineHeight: '140%',
     textAlign: 'center',
@@ -14,7 +14,7 @@ const PromoHelloStyles = {
   },
   p: {
     marginLeft: '-12px',
-    fontSize: '11px',
+    fontSize: '14px',
     fontWeight: 300,
     lineHeight: '140%',
     textAlign: 'center',

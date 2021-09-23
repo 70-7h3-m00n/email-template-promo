@@ -54,7 +54,7 @@ const ctaStyles = {
     marginTop: 0,
     marginBottom: '30px',
     marginLeft: '20px',
-    fontSize: '11px',
+    fontSize: '12px',
     fontWeight: 300,
     lineHeight: '17px',
     color: '#3A3E49'
