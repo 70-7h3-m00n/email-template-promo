@@ -12,7 +12,8 @@ const ctaStyles = {
   },
   psychology: {
     backgroundImage:
-      "url('https://res.cloudinary.com/npoipe/image/upload/v1632141645/email%20template%20promo/cta-psychology_d8lfo2.jpg')",
+      "url('https://res.cloudinary.com/npoipe/image/upload/v1632420069/email%20template%20promo/cta-psychology_djn7ax.png')",
+    backgroundColor: '#F2F2F2',
     minWidth: '600px',
     width: '600px',
     minHeight: '300px',
@@ -20,7 +21,8 @@ const ctaStyles = {
   },
   management: {
     backgroundImage:
-      "url('https://res.cloudinary.com/npoipe/image/upload/v1632141708/email%20template%20promo/cta-management_ve28v2.jpg')",
+      "url('https://res.cloudinary.com/npoipe/image/upload/v1632420069/email%20template%20promo/cta-management_sld1tl.png')",
+    backgroundColor: '#F2F2F2',
     minWidth: '600px',
     width: '600px',
     minHeight: '300px',
@@ -28,7 +30,8 @@ const ctaStyles = {
   },
   tech: {
     backgroundImage:
-      "url('https://res.cloudinary.com/npoipe/image/upload/v1632141711/email%20template%20promo/cta-tech_j2jc99.jpg')",
+      "url('https://res.cloudinary.com/npoipe/image/upload/v1632420069/email%20template%20promo/cta-tech_xdqst0.png')",
+    backgroundColor: '#F2F2F2',
     minWidth: '600px',
     width: '600px',
     minHeight: '300px',

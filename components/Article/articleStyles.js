@@ -3,9 +3,14 @@ const articleStyles = {
     // marginTop: '-17px'
     marginBottom: '10px'
   },
+  fullwidth: {
+    width: '100%',
+    height: '100%',
+    marginBottom: '50px'
+  },
   title: {
     marginTop: '30px',
-    marginLeft: '20px',
+    // marginLeft: '20px',
     textAlign: 'center',
     fontSize: '24px',
     fontWeight: 500,
@@ -45,7 +50,7 @@ const articleStyles = {
   prize: {
     marginTop: '-10px',
     marginBottom: '17px',
-    marginLeft: '20px',
+    // marginLeft: '20px',
     fontSize: '24px',
     fontWeight: 500,
     color: '#fff'
@@ -53,7 +58,7 @@ const articleStyles = {
   subtitle: {
     marginTop: '-1px',
     marginBottom: '13px',
-    marginLeft: '20px',
+    // marginLeft: '20px',
     fontSize: '14px',
     fontWeight: 500,
     color: '#fff'
@@ -61,7 +66,7 @@ const articleStyles = {
   info: {
     marginTop: 0,
     marginBottom: '30px',
-    marginLeft: '20px',
+    // marginLeft: '20px',
     fontSize: '11px',
     fontWeight: 300,
     lineHeight: '17px',
@@ -72,6 +77,7 @@ const articleStyles = {
     marginBottom: '30px',
     textAlign: 'center',
     marginLeft: '20px',
+    marginRight: '20px',
     fontSize: '14px',
     fontWeight: 300,
     lineHeight: '21px',
@@ -87,7 +93,7 @@ const articleStyles = {
   },
   btn: {
     display: 'block',
-    margin: '7px auto 50px auto',
+    margin: '7px auto',
     width: '100%',
     maxWidth: '200px',
     padding: '11px 22px',
