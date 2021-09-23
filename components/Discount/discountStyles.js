@@ -4,7 +4,8 @@ const DiscountStyles = {
     marginBottom: '10px',
     backgroundColor: '#3290FF'
   },
-  column: {
+  fullwidth: {
+    minWidth: '100%',
     width: '100%'
   },
   title: {
