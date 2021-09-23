@@ -34,7 +34,7 @@ const Home = ({ type }) => {
 
 export async function getStaticProps(context) {
   // const data = await fetchNotionData()
-  const type = 'psychology' // psychology & managment & tech
+  const type = 'psychology' // psychology & management & tech
 
   return {
     props: {
